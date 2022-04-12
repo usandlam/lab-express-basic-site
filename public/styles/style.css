@@ -1,0 +1,69 @@
+/* body {
+    color: limegreen;
+    background-color: magenta;
+  } */
+
+  body {
+    background: #3A3A42;
+    box-sizing: content-box; }
+  
+  .menu {
+    position: fixed;
+    height: 100vh;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Kop_van_een_skelet_met_brandende_sigaret_-_s0083V1962_-_Van_Gogh_Museum.jpg/904px-Kop_van_een_skelet_met_brandende_sigaret_-_s0083V1962_-_Van_Gogh_Museum.jpg');
+    /* background: RGB(250, 212, 79); */
+    width: 10vw;
+    background-position-x: 25%;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.2);
+    transition: 1s; }
+    .menu:hover {
+      width: 40vw; }
+    .menu:hover ~ .container {
+      transform: perspective(80vw) rotateY(10deg) translateX(35vw) scaleY(1.2); }
+    .menu:hover nav {
+      left: 20%; }
+  
+  .container {
+    width: 90%;
+    margin-left: 10vw;
+    background: #FDFDFD;
+    transition: 1s;
+    transform-origin: left center;
+    color: #D2D2D0; }
+    .container .content {
+      padding: 100px 20%; }
+  
+  nav {
+    position: absolute;
+    margin-top: 50%;
+    left: -1000px;
+    transition: .5s; }
+    nav ul {
+      color: white;
+      text-transform: uppercase;
+      list-style-type: none; }
+    nav li {
+      line-height: 2em;
+      letter-spacing: .3em; }
+    nav a {
+      font-size: 30px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600; }
+      nav a:hover {
+        color: #eee; }
+  
+  p {
+      color: #003153;
+    line-height: 1.5em; }
+  
+  h1 {
+    /* color: #bbb; */
+    color: RGB(250, 212, 79); }
+  h2 {
+    color: #D27D46; }
+
+.photo-gallery {
+    max-width: 440px;
+    max-height: 556px;
+}
